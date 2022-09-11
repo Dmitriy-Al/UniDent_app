@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".PageActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/bar"
+            android:layout_margin="15dp"
+            android:contentDescription="toolbar"
+            >
+        </ImageView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_150">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="О нас"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="Все услуги"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:text="О приложении"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/interface_pic7"
+                />
+
+            <ImageButton
+                android:id="@+id/button_one"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/button_two"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:background="@color/teal_700" />
+
+            <ImageButton
+                android:id="@+id/button_two"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_above="@+id/button_three"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:background="@color/teal_700" />
+
+            <ImageButton
+                android:id="@+id/button_three"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/teal_700"
+                android:layout_margin="15dp"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>

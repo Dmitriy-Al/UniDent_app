@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:src="@drawable/bar"
-        android:layout_margin="10dp"
+        android:layout_margin="15dp"
         android:contentDescription="toolbar"
         >
     </ImageView>
@@ -22,7 +22,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple_150">
+        android:background="@color/purple_170">
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
             android:text="Все услуги"
             android:textColor="@color/white"
             android:textSize="18sp"
@@ -53,49 +54,51 @@
 
 </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="600dp"
-        android:background="@drawable/interface_pic1"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="20dp"
-            android:gravity="bottom"
-            android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/interface_pic7" />
 
-            <Button
-                android:layout_width="150dp"
-                android:layout_height="70dp"
-                android:layout_margin="20dp"
-                android:backgroundTint="@color/purple_100"
-                android:text="Акции"
-                android:textColor="@color/purple_200"
-                android:textSize="16sp" />
 
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="70dp"
-                android:layout_margin="20dp"
-                android:backgroundTint="@color/purple_100"
-                android:text="Адреса клиник"
-                android:textColor="@color/purple_200"
-                android:textSize="16sp" />
+        <ImageButton
+            android:id="@+id/button_one"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/button_two"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_sale1" />
 
-            <Button
-                android:layout_width="250dp"
-                android:layout_height="70dp"
-                android:layout_margin="20dp"
-                android:backgroundTint="@color/purple_100"
-                android:text="Записаться на приём"
-                android:textColor="@color/purple_200"
-                android:textSize="16sp"/>
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/button_two"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/button_three"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_adress1" />
 
-    </LinearLayout>
+        <ImageButton
+            android:id="@+id/button_three"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_reserve1"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
