@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Address">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Гражданский пр., дом 88, кор. 3
+с 9.00 до 21.00
+Записаться в клинику можно по телефону.
++7 (812) 407 31 13
+info@yni-dent.ru
+Метро Выборгская
+Большой Сампсониевский пр., дом 47
+с 9.00 до 21.00
+Записаться в клинику можно по телефону.
++7 (812) 407 31 13
+info@yni-dent.ru
+Метро Пионерская
+ал. Поликарпова, дом 6 кор. 2
+с 9.00 до 21.00
+Записаться в клинику можно по телефону.
++7 (812) 407 31 13
+info@yni-dent.ru
+Метро Петроградская
+Бармалеева ул., дом 12
+с 9.00 до 21.00
+Просьба записываться в клинику по телефону.
++7 (812) 603 42 23
+info@dctom.ru"
+        android:textColor="@color/purple_200"
+       />
+</LinearLayout>
