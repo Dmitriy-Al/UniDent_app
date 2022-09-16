@@ -24,7 +24,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/about_app"
+            android:id="@+id/text_clicker_service"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -35,7 +35,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/about_us"
+            android:id="@+id/text_clicker_about_us"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -47,7 +47,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/price"
+            android:id="@+id/text_clicker_about_app"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -63,11 +63,13 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="top"
         android:background="@color/gray">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_gravity="top"
             android:src="@drawable/interface_pic8" />
 
         <RelativeLayout
@@ -77,30 +79,30 @@
             android:layout_alignParentBottom="true">
 
             <ImageButton
-                android:id="@+id/button_one"
+                android:id="@+id/button_promotion"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
-                android:layout_above="@+id/button_two"
+                android:layout_above="@+id/button_address"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
-                android:background="@drawable/button_sale1" />
+                android:background="@drawable/button_promotion1" />
 
             <ImageButton
-                android:id="@+id/button_two"
+                android:id="@+id/button_address"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
-                android:layout_above="@+id/button_three"
+                android:layout_above="@+id/button_appointment"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
-                android:background="@drawable/button_adress1" />
+                android:background="@drawable/button_address1" />
 
             <ImageButton
-                android:id="@+id/button_three"
+                android:id="@+id/button_appointment"
                 android:layout_width="300dp"
                 android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
-                android:background="@drawable/button_reserve1"
+                android:background="@drawable/button_appointment1"
                 android:layout_alignParentBottom="true"/>
 
         </RelativeLayout>
