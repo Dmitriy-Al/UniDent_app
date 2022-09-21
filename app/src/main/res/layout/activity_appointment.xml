@@ -13,15 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_150">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_margin="10dp"
             android:text="Заполнив форму, вы можете отправить нам сообщение и в ближайшее время мы свяжемся с вами"
-            android:textColor="@color/purple_200"
+            android:textColor="@color/white"
             android:textSize="20sp" />
+</FrameLayout>
 
         <EditText
             android:id="@+id/edit_text_name"
@@ -40,7 +44,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="10dp"
             android:text="Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных."
             android:textColor="@color/black"
             android:textSize="10sp" />

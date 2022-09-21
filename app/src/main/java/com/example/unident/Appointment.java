@@ -59,7 +59,7 @@ public class Appointment extends AppCompatActivity {
         button_mail.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String mail = "al.dimitry@ya.ru";// поля с неконстантами вынести в отдельный класс
+                    String mail = "al.dimitry@ya.ru";// поля с не константами вынести в отдельный класс
                     String subject = edit_text_name.getText().toString();
                     String body = edit_text_phone.getText().toString();
                     String mailTo = "mailto:" + mail + "?&subject=" + Uri.encode(subject) + "&body=" + Uri.encode(body);

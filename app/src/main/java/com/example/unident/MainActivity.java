@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     ImageButton button_address;
     ImageButton button_appointment;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
