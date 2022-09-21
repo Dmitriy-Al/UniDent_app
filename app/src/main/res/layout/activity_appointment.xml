@@ -19,9 +19,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_margin="10dp"
-            android:text="Заполните форму и мы перезвоним вам"
+            android:text="Заполнив форму, вы можете отправить нам сообщение и в ближайшее время мы свяжемся с вами"
             android:textColor="@color/purple_200"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/edit_text_name"
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:hint="номер в формате +7(_ _ _" />
+            android:hint="Телефонный номер +7_ _ _" />
 
         <TextView
             android:layout_width="match_parent"
@@ -45,15 +45,12 @@
             android:textColor="@color/black"
             android:textSize="10sp" />
 
-        <Button
-            android:id="@+id/button_send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageButton
+            android:id="@+id/button_mail"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/purple_150"
-            android:text="Отправить"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:background="@drawable/button_mail_transparent" />
 
         <FrameLayout
             android:layout_width="match_parent"

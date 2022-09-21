@@ -19,9 +19,9 @@ public class Appointment extends AppCompatActivity {
 
     //String email = "a.dmitriy.viktorovich@gmail.com";
 
-    ImageButton button_call;
+    ImageButton button_call, button_mail;
     EditText edit_text_name, edit_text_phone;
-    Button button_send;
+
 
 
     @Override
@@ -33,7 +33,7 @@ public class Appointment extends AppCompatActivity {
         button_call = findViewById(R.id.button_call);
         edit_text_name = findViewById(R.id.edit_text_name);
         edit_text_phone = findViewById(R.id.edit_text_phone);
-        button_send = findViewById(R.id.button_send);
+        button_mail = findViewById(R.id.button_mail);
 
         ActivityResultLauncher<Intent> ActivityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -56,34 +56,16 @@ public class Appointment extends AppCompatActivity {
            }
         });
 
-
-
-            button_send.setOnClickListener(new View.OnClickListener() {
+        button_mail.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-
-                   Intent intent = new Intent(android.content.Intent.ACTION_SENDTO);
-                    intent.setType("message/rfc822");
-
-                    intent.setType("plain/text");
-                    intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"al.dimitry@ya.ru"});
-                    intent.putExtra(android.content.Intent.EXTRA_SUBJECT, edit_text_name.getText().toString());
-                    intent.putExtra(android.content.Intent.EXTRA_TEXT, edit_text_phone.getText().toString());
-                    intent.setData(Uri.parse("mailto:al.dimitry@ya.ru"));
-                    Appointment.this.startActivity(Intent.createChooser(intent, "Отправка Email..."));
-                   //////////////////////////
-                /*     Intent intent = new Intent(Intent.ACTION_SENDTO);
-                    intent.setData(Uri.parse("mailto:al.dimitry@ya.ru"));
-                    //intent.putExtra(Intent.EXTRA_SUBJECT, edit_text_name.getText().toString());
-                    //intent.putExtra(Intent.EXTRA_TEXT, edit_text_phone.getText().toString());
-                    intent.putExtra(android.content.Intent.EXTRA_SUBJECT, edit_text_name.getText().toString());
-                    intent.putExtra(android.content.Intent.EXTRA_TEXT, edit_text_phone.getText().toString());
-                    //Appointment.this.startActivity(Intent.createChooser(intent, "Отправка Email..."));
-                    startActivity(Intent.createChooser(intent, "Send Email"));
-                    if (intent.resolveActivity(getPackageManager()) != null) {
-                        startActivity(intent);
-                    }*/
-
+                    String mail = "al.dimitry@ya.ru";// поля с неконстантами вынести в отдельный класс
+                    String subject = edit_text_name.getText().toString();
+                    String body = edit_text_phone.getText().toString();
+                    String mailTo = "mailto:" + mail + "?&subject=" + Uri.encode(subject) + "&body=" + Uri.encode(body);
+                    Intent emailIntent = new Intent(Intent.ACTION_VIEW);
+                    emailIntent.setData(Uri.parse(mailTo));
+                    startActivity(emailIntent);
 
                 }
             });
